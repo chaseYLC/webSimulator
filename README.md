@@ -12,6 +12,7 @@ This source code controls the keyboard and mouse to manipulate the web browser. 
  
  # Finding Mouse Coordinates
  Manipulate the web browser and check the coordinates displayed in the output window.
- ![Alt Text](https://github.com/chaseYLC/webSimulator/blob/master/doc/mousePosition.gif)
+ ![Alt Text](https://user-images.githubusercontent.com/7608633/45803767-5b535f00-bcf5-11e8-9969-ae7906435e76.gif)
+ 
  
  
