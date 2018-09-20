@@ -1,0 +1,25 @@
+﻿<Window x:Class="webSimulator.MessageBoxAutoHide"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:webSimulator"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowState="Normal"
+        WindowStartupLocation="CenterOwner"
+        Title="AutoHideMessageBox" Height="133.655" Width="469.388" Loaded="Window_Loaded">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard >
+                    <DoubleAnimation Duration="0:0:1.0" Storyboard.TargetProperty="Top" From="-200" To="200" AccelerationRatio=".1" />
+                    <DoubleAnimation BeginTime="0:0:3.0" Duration="0:0:1.0" Storyboard.TargetProperty="Top" From="200" To="-200" AccelerationRatio=".1" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <TextBlock Name="msgLabel" Text="msg" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" />
+    </Grid>
+</Window>
